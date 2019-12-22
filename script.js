@@ -86,3 +86,4 @@ function deleteCard(event) {
 }
 // loop over them and attach a listener
 button.forEach(button => button.addEventListener(`click`, deleteCard));
+
