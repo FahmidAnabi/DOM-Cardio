@@ -257,3 +257,21 @@ h6 {
   color: var(--black);
   text-shadow: none;
 }
+
+/* Player Cards Style */
+
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+  }
+  .playerCard{
+    background: white;
+    padding: 20px;
+  }
+  .playerCard h2{
+    color: black;
+  }
