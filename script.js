@@ -66,15 +66,14 @@ const cards = document.createElement(`div`);
 cards.classList.add(`cards`);
 
 // Have that function make 4 cards
-let cardHTML = generatePlayerCard(`MD`, 25, 167);
-cardHTML += generatePlayerCard(`Fahmid`, 25, 167);
-cardHTML += generatePlayerCard(`Hasan`, 25, 167);
-cardHTML += generatePlayerCard(`Anabi`, 25, 167);
+let cardHTML = generatePlayerCard(`MD`, 24, 167);
+cardHTML += generatePlayerCard(`Fahmid`, 24, 167);
+cardHTML += generatePlayerCard(`Hasan`, 24, 167);
+cardHTML += generatePlayerCard(`Anabi`, 24, 167);
 // append those cards to the div
 cards.innerHTML = cardHTML;
 // put the div into the DOM just before the wrapper element
 div.insertAdjacentElement(`beforebegin`, cards);
-
 
 // Bonus, put a delete Button on each card so when you click it, the whole card is removed
 // select all the buttons!
@@ -83,7 +82,7 @@ const button = document.querySelectorAll(`.delete`);
 function deleteCard(event) {
   const buttonClicked = event.currentTarget;
   //buttonClicked.parentElement.remove();
-  buttonClicked.closest(`.playerCard`).remove();
+  buttonClicked.closest(`.playerCard`).remove(); // Another method.
 }
 // loop over them and attach a listener
-button.forEach(button=>button.addEventListener(`click`,deleteCard));
+button.forEach(button => button.addEventListener(`click`, deleteCard));
