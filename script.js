@@ -18,9 +18,9 @@ div.innerHTML = ul;
 // create an image
 const img = document.createElement(`img`);
 // set the source to an image
-img.src = `https://picsum.photos/500`;
-// set the width to 250
-img.width = 250;
+img.src = `https://picsum.photos/600`;
+// set the width to 350
+img.width = 350;
 // add a class of cute
 img.classList.add(`cute`);
 // add an alt of Cute Puppy
